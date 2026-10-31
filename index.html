@@ -3,61 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لـ نونتي ❤️</title>
-<style>
-body { background: #0a0a0a; color: white; font-family: 'Cairo', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-.card { background: linear-gradient(135deg, #1a1a1a, #2a2a2a); border: 1px solid #ff2e78; border-radius: 20px; padding: 30px; text-align: center; max-width: 400px; width: 90%; box-shadow: 0 0 30px rgba(255,46,120,0.3); }
-h1 { color: #ff2e78; font-size: 28px; margin-bottom: 10px; }
-#timer { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
-#timer div { background: #ff2e78; padding: 10px 12px; border-radius: 10px; min-width: 55px; }
-#timer div span { display: block; font-size: 22px; font-weight: bold; }
-#message { display: none; animation: fadeIn 2s; }
-#message p { font-size: 19px; line-height: 1.8; }
-.heart { font-size: 60px; animation: beat 1s infinite; }
-@keyframes beat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.2)} }
-@keyframes fadeIn { from{opacity:0; transform: translateY(20px);} to{opacity:1; transform: translateY(0);} }
-.small { color: #aaa; font-size: 14px; margin-top: 15px; }
-</style>
+<title>تقرير التصفح الآمن - ملك</title>
 </head>
-<body>
-<div class="card">
-  <div class="heart">❤️</div>
-  <h1>هدية عيد ميلاد نونتي 🎂</h1>
-  <p>العد التنازلي ليومك المميز</p>
-  
-  <div id="timer">
-    <div><span id="days">0</span>يوم</div>
-    <div><span id="hours">0</span>ساعة</div>
-    <div><span id="minutes">0</span>دقيقة</div>
-    <div><span id="seconds">0</span>ثانية</div>
-  </div>
+<body style="font-family:Arial; max-width:800px; margin:auto; padding:20px; background:#f9f9f9;">
 
-  <div id="message">
-    <h1>كل سنة وانتي طيبة يا نونتي! 🎉🌍</h1>
-    <p>اليوم يومك، يوم ميلاد اجمل بنوتة في الدنيا<br>يارب تبقى سنة حلوة عليكي قد حلاوتك<br>بحبك ❤️</p>
-  </div>
-  <div class="small">من زياد - 21/11/2026</div>
-</div>
+<h1>تطبيقات الإنترنت - التصفح الآمن</h1>
+<p><strong>اسم الطالبة:</strong> ملك</p>
+<p><strong>السكشن:</strong> 145</p>
+<hr>
 
-<script>
-// المعاد: 21 نوفمبر 2026 الساعة 00:00:00
-const birthdayDate = new Date("2026-11-21T00:00:00").getTime();
+<h2>المقدمة</h2>
+<p>يعتبر <strong>التصفح الآمن (Safe Browsing)</strong> هو البنية الأساسية لحماية المستخدم على الإنترنت من المواقع الضارة والبرمجيات الخبيثة.</p>
 
-const x = setInterval(function() {
-  const now = new Date().getTime();
-  const distance = birthdayDate - now;
+<h2>عرض الموضوع</h2>
+<h3>أهم أنواع الحماية</h3>
 
-  if (distance <= 0) {
-    clearInterval(x);
-    document.getElementById("timer").style.display = "none";
-    document.getElementById("message").style.display = "block";
-  } else {
-    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-    document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
-  }
-}, 1000);
-</script>
+<img src="https://cdn.vectorstock.com/i/1000x1000/28/11/safe-browsing-vector-2142811.webp" alt="التصفح الآمن" width="500" style="display:block; margin:20px auto; border-radius:12px; border:2px solid #ddd;">
+
+<h3>جدول مقارنة</h3>
+<table border="1" cellpadding="10" style="width:100%; text-align:center; background:white; border-collapse:collapse;">
+<tr style="background:#e3f2fd;"><th>نوع الحماية</th><th>المثال</th><th>الاستخدام</th></tr>
+<tr><td>حماية البيانات</td><td>Protect Your Data</td><td>الحفاظ على المعلومات</td></tr>
+<tr><td>مواقع موثوقة</td><td>Trusted Sites</td><td>التصفح الآمن</td></tr>
+<tr><td>تأمين الاتصال</td><td>HTTPS</td><td>تشفير البيانات</td></tr>
+</table>
+
+<h2>المراجع</h2>
+<ul>
+<li><a href="https://safebrowsing.google.com/">Google Safe Browsing</a></li>
+<li><a href="https://www.wikipedia.org/wiki/Internet">ويكيبيديا</a></li>
+<li><a href="https://www.w3schools.com/html/">W3Schools - HTML</a></li>
+</ul>
+
 </body>
 </html>
