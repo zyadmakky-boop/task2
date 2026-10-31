@@ -3,72 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لـ نونتي</title>
+<title>لـ نونتي ❤️</title>
 <style>
-body { background: #0a0a0a; color: white; font-family: 'Tahoma', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; text-align: center; }
-.card { background: linear-gradient(145deg, #1c1c1c, #252525); padding: 35px; border-radius: 25px; box-shadow: 0 0 40px rgba(255, 46, 120, 0.4); max-width: 550px; width: 90%; border: 1px solid #ff2e78; }
-h1 { color: #ff2e78; font-size: 28px; }
-#timer { display: flex; justify-content: center; gap: 12px; margin: 25px 0; font-size: 20px; flex-wrap: wrap; }
-#timer div { background: #ff2e78; padding: 12px; border-radius: 12px; min-width: 65px; font-weight: bold; }
-#message { display: none; animation: fadeIn 2.5s; }
-#message p { font-size: 19px; line-height: 2; color: #ffd6e7; }
+body { background: #0a0a0a; color: white; font-family: 'Cairo', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+.card { background: linear-gradient(135deg, #1a1a1a, #2a2a2a); border: 1px solid #ff2e78; border-radius: 20px; padding: 30px; text-align: center; max-width: 400px; width: 90%; box-shadow: 0 0 30px rgba(255,46,120,0.3); }
+h1 { color: #ff2e78; font-size: 28px; margin-bottom: 10px; }
+#timer { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+#timer div { background: #ff2e78; padding: 10px 12px; border-radius: 10px; min-width: 55px; }
+#timer div span { display: block; font-size: 22px; font-weight: bold; }
+#message { display: none; animation: fadeIn 2s; }
+#message p { font-size: 19px; line-height: 1.8; }
 .heart { font-size: 60px; animation: beat 1s infinite; }
-@keyframes beat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.25)} }
+@keyframes beat { 0%,100%{transform:scale(1)} 50%{transform:scale(1.2)} }
 @keyframes fadeIn { from{opacity:0; transform: translateY(20px);} to{opacity:1; transform: translateY(0);} }
 .small { color: #aaa; font-size: 14px; margin-top: 15px; }
 </style>
 </head>
 <body>
 <div class="card">
-  <div id="countdown-section">
-    <div class="heart">❤️</div>
-    <h1>يا نونتي...</h1>
-    <p>فيه رسالة متشالة جوه قلبي ليكي<br>مش هتتفتح غير يوم عيد ميلادك</p>
-    <div id="timer">
-      <div><span id="days">0</span><br>يوم</div>
-      <div><span id="hours">0</span><br>ساعة</div>
-      <div><span id="minutes">0</span><br>دقيقة</div>
-      <div><span id="seconds">0</span><br>ثانية</div>
-    </div>
-    <p class="small">21 / 11 / 2026 - الساعة 12:00 منتصف الليل</p>
+  <div class="heart">❤️</div>
+  <h1>هدية عيد ميلاد نونتي 🎂</h1>
+  <p>العد التنازلي ليومك المميز</p>
+  
+  <div id="timer">
+    <div><span id="days">0</span>يوم</div>
+    <div><span id="hours">0</span>ساعة</div>
+    <div><span id="minutes">0</span>دقيقة</div>
+    <div><span id="seconds">0</span>ثانية</div>
   </div>
 
   <div id="message">
-    <div class="heart">💖</div>
-    <h1>كل سنة وانتي طيبة يا نونتي</h1>
-    <p>
-      يا نونتي يا حتة من قلبي..<br><br>
-      من يوم ما دخلتي حياتي وانا حاسس ان ربنا بعتلي هدية، هدية انا افضل اشكره عليها طول العمر.<br><br>
-      انتي مش خطيبتي بس، انتي بنتي وصاحبتي وحبيبتي وكل دنيتي.<br>
-      ضحكتك بتنسيني تعب اليوم كله، وصوتك بيطمني حتى لو الدنيا كلها مقلوبة.<br><br>
-      في عيد ميلادك بتمنالك كل حاجة حلوة شبهك، بتمنالك سنة كلها فرح ونجاح وراحة بال، وسنة اقرب ليكي مني، واقرب ليا منك.<br><br>
-      اوعدك افضل جنبك، سندك وضهرك، وافضل احبك كل يوم اكتر من اللي قبله.<br>
-      لحد ما نكبر سوا وشعرنا يشيب وانا لسه بقولك يا نونتي..<br><br>
-      كل سنة وانتي ملكة قلبي<br>
-      كل سنة وانتي ليا وانا ليكي<br><br>
-      بحبك يا أجمل نونتي في الدنيا ❤️<br>
-      <strong>- زياد اللي بيموت فيكي</strong>
-    </p>
+    <h1>كل سنة وانتي طيبة يا نونتي! 🎉🌍</h1>
+    <p>اليوم يومك، يوم ميلاد اجمل بنوتة في الدنيا<br>يارب تبقى سنة حلوة عليكي قد حلاوتك<br>بحبك ❤️</p>
   </div>
+  <div class="small">من زياد - 21/11/2026</div>
 </div>
 
 <script>
-const targetDate = new Date("2026-11-21T00:00:00+02:00").getTime();
-function updateTimer() {
+// المعاد: 21 نوفمبر 2026 الساعة 00:00:00
+const birthdayDate = new Date("2026-11-21T00:00:00").getTime();
+
+const x = setInterval(function() {
   const now = new Date().getTime();
-  const diff = targetDate - now;
-  if (diff <= 0) {
-    document.getElementById("countdown-section").style.display = "none";
+  const distance = birthdayDate - now;
+
+  if (distance <= 0) {
+    clearInterval(x);
+    document.getElementById("timer").style.display = "none";
     document.getElementById("message").style.display = "block";
-    return;
+  } else {
+    document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
   }
-  document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-  document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
-}
-setInterval(updateTimer, 1000);
-updateTimer();
+}, 1000);
 </script>
 </body>
 </html>
